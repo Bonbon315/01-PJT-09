@@ -3,5 +3,99 @@
 {% load django_bootstrap5 %}
 
 {% block body %}
-<h1>home</h1>
+<h1 class="text-center m-4 fw-bold">MovieInfo</h1>
+<hr>
+<div class="container">
+  <h2 class="text-center fw-bold mb-3">Boxoffice</h2>
+  <hr>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 justify-content-center g-4">
+    <div class="card mx-2">
+      <img class="card-img-top" src="{% static 'life.jpg' %}" alt="...">
+      <div class="card-body text-start">
+        <h5 class="card-title fw-bold">인생은 아름다워</h5>
+        <p class="card-text">2020년 * 한국</p>
+        <p class="card-text text-secondary">평균★3.1</p>
+      </div>
+    </div>
+    <div class="card mx-2">
+      <img class="card-img-top" src="{% static '공조2.jpg' %}" alt="...">
+      <div class="card-body text-start">
+        <h5 class="card-title fw-bold">공조2: 인터내셔날</h5>
+        <p class="card-text">2021년 * 한국</p>
+        <p class="card-text text-secondary">평균★3.0</p>
+      </div>
+    </div>
+    <div class="card mx-2">
+      <img class="card-img-top" src="{% static '정직한_후보_2.jpg' %}" alt="...">
+      <div class="card-body text-start">
+        <h5 class="card-title fw-bold">정직한 후보 2</h5>
+        <p class="card-text">2022년 * 한국</p>
+        <p class="card-text text-secondary">평균★2.9</p>
+      </div>
+    </div>
+    <div class="card mx-2">
+      <img class="card-img-top" src="{% static 'shinzzang.jpg' %}" alt="...">
+      <div class="card-body text-start">
+        <h5 class="card-title fw-bold">극장판 짱구는 못말려: 수수께끼! 꽃피는 천하떡잎학교</h5>
+        <p class="card-text">2021년 * 일본</p>
+        <p class="card-text text-secondary">평균★3.7</p>
+      </div>
+    </div>
+    <div class="card mx-2">
+      <img class="card-img-top" src="{% static '듄.jpg' %}" alt="...">
+      <div class="card-body text-start">
+        <h5 class="card-title fw-bold">듄</h5>
+        <p class="card-text">2021년 * 미국</p>
+        <p class="card-text text-secondary">평균★3.7</p>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <h2 class="text-center fw-bold mb-3">Top 10</h2>
+  <hr>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 justify-content-center g-4">
+    <div class="card mx-2">
+      <img class="card-img-top" src="{% static '극한직업.jpg' %}" alt="...">
+      <div class="card-body text-start">
+        <h5 class="card-title fw-bold">극한직업</h5>
+        <p class="card-text">2018년 * 한국</p>
+        <p class="card-text text-secondary">평균★4.2</p>
+      </div>
+    </div>
+    <div class="card mx-2">
+      <img class="card-img-top" src="{% static '공조.jpg' %}" alt="...">
+      <div class="card-body text-start">
+        <h5 class="card-title fw-bold">공조</h5>
+        <p class="card-text">2017년 * 한국</p>
+        <p class="card-text text-secondary">평균★3.6</p>
+      </div>
+    </div>
+    <div class="card mx-2">
+      <img class="card-img-top" src="{% static '불한당.jpg' %}" alt="...">
+      <div class="card-body text-start">
+        <h5 class="card-title fw-bold">불한당: 나쁜 놈들의 세상</h5>
+        <p class="card-text">2016년 * 한국</p>
+        <p class="card-text text-secondary">평균★3.8</p>
+      </div>
+    </div>
+    <div class="card mx-2">
+      <img class="card-img-top" src="{% static '타짜.jpg' %}" alt="...">
+      <div class="card-body text-start">
+        <h5 class="card-title fw-bold">타짜</h5>
+        <p class="card-text">2006년 * 한국</p>
+        <p class="card-text text-secondary">평균★4.2</p>
+      </div>
+    </div>
+    <div class="card mx-2">
+      <img class="card-img-top" src="{% static '범죄도시.jpg' %}" alt="...">
+      <div class="card-body text-start">
+        <h5 class="card-title fw-bold">범죄도시</h5>
+        <p class="card-text">2017년 * 한국</p>
+        <p class="card-text text-secondary">평균★4.0</p>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
