@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block body %}
+<form action="" method="POST" class="w-75 m-auto p-4">
+  {% csrf_token %}
+  {% bootstrap_form article_form %}
+  {% bootstrap_button button_type="submit" content="수정" %}
+</form>
+{% endblock %}

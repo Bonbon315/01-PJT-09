@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block body %}
+<div class="w-75 m-auto p-4">
+  <h1>{{ article.title }}</h1>
+  <hr>
+  <div class="row justify-content-between">
+    <h3 class="col">{{ article.movie_name }}</h3>
+    <h4 class="col text-end">{{ article.grade }}점</h4>
+  </div>
+  <div class="row my-3">
+    <p class="text-secondary">{{ article.content|linebreaksbr }}</p>
+  </div>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <a href="./update/" class="btn btn-outline-success">수정</a>
+    <form action="{% url 'articles:delete' article.id %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" value="삭제" class="btn btn-outline-danger">
+    </form>
+    
+  </div>
+</div>
+{% endblock %}
